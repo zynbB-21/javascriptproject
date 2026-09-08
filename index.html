@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJECT 3</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navigationbar">
+        <div class="logo">
+          <i class="fa-solid fa-bolt m"></i>
+          <span>VOLTIX</span>
+        </div>
+        <ul class="unorderlisthd">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="btns">
+          <button id="login">Login</button>
+          <button id="cartbtn">
+            <i class="fa-solid fa-cart-shopping n"></i
+            ><span id="counter">0</span>
+          </button>
+          <button id="darkmd"><i class="fa-solid fa-sun n"></i></button>
+          <button id="menu">Menu</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hm" id="home">
+      <div class="p1">
+        <!-- <div class="hp"> -->
+        <h1 class="title">Smart Tech.<br />Better Everyday.</h1>
+        <p class="titleparg">
+          Discover premium electronic devices <br />that bring power,
+          performance, and<br />
+          innovation to your everyday life.
+        </p>
+
+        <div class="homebtn">
+          <button>
+            <a href="#products"
+              >SHOP NOW <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </button>
+          <button><a href="#deals">EXPLORE DEALS</a></button>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="featuredProduct">
+        <img class="imag" src="images/laptop.jpeg" />
+        <h3>featured Product</h3>
+        <h2>HP EliteBook 840 G9 - 1500 $</h2>
+        <p>
+          Build for professionals who demand speed, security, and reliability
+        </p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="service">
+        <div class="service-icon">
+          <i class="dr fa-solid fa-shield-halved"></i>
+        </div>
+
+        <div>
+          <h3>100% Authentic Products</h3>
+          <p>Genuine & Quality Products</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">
+          <i class="sh fa-solid fa-truck-fast"></i>
+        </div>
+
+        <div>
+          <h3>Free Shipping</h3>
+          <p>On orders over $99</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">
+          <i class="lop fa-solid fa-rotate"></i>
+        </div>
+
+        <div>
+          <h3>Easy Returns</h3>
+          <p>30-Day Return Policy</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">
+          <i class="ef fa-solid fa-lock"></i>
+        </div>
+
+        <div>
+          <h3>Secure Payment</h3>
+          <p>100% Safe & Secure</p>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <h2>OUR PRODUCTS</h2>
+      <p>
+        Our products are waiting for you ;) Explore them and choose what you
+        need.
+      </p>
+      <div class="contents">
+        <div class="categories">
+          <button class="category-btn active" data-category="all">All</button>
+
+          <button class="category-btn" data-category="laptops">Laptops</button>
+
+          <button class="category-btn" data-category="phones">Phones</button>
+
+          <button class="category-btn" data-category="accessories">
+            Accessories
+          </button>
+
+          <button class="category-btn" data-category="gaming">Gaming</button>
+        </div>
+
+        <div class="productselector">
+          <input type="text" id="searchpro" placeholder="Search products..." />
+
+          <select id="sortpro">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="name">Name A-Z</option>
+          </select>
+        </div>
+
+        <div id="res"></div>
+      </div>
+    </section>
+
+    <div id="cartPanel" class="cart-panel">
+      <div class="cart-header">
+        <h2>Shopping Cart</h2>
+
+        <button id="closeCart">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-footer">
+        <h3>Total: $<span id="cartTotal">0</span></h3>
+
+        <button id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+
+    <section id="deals">
+      <div class="dealscontent">
+        <p>SPECIAL OFFERS</p>
+        <h2>Amazing Deals</h2>
+
+        <p>Save Up To 30% on Selected Electronics</p>
+        <p>Limited Time Offers!</p>
+        <button><a href="#products">Shop Deals</a></button>
+      </div>
+      <div class="timer">
+        <p>Days: <span id="days">0</span></p>
+        <p>Hours: <span id="hrs">0</span></p>
+        <p>Minutes: <span id="mins">0</span></p>
+        <p>Seconds: <span id="sec">0</span></p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="firstaboutside">
+        <div class="aboutcontent">
+          <h2>ABOUT US</h2>
+          <p class="aboutqoute">Your Trusted Electronics Store</p>
+          <p class="aboutparg">
+            At VOLTIX, we believe in providing the best technology for a
+            <br />better tomorrow.We offer high-quality, competitive prices and
+            <br />excellent customer service ;').
+          </p>
+
+          <div class="abouticonsbox">
+            <div class="abouticon">
+              <i class="fa-solid fa-diamond"></i>
+              <h3>5+</h3>
+              <p>Years Of Experience</p>
+            </div>
+            <div class="abouticon">
+              <i class="fa-solid fa-users"></i>
+              <h3>50K+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div class="abouticon">
+              <i class="fa-solid fa-box"></i>
+              <h3>10K+</h3>
+              <p>Products Sold</p>
+            </div>
+            <div class="abouticon">
+              <i class="fa-solid fa-star"></i>
+              <h3>4.8</h3>
+              <p>Average Rating</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/aboutus.jpeg" class="image" />
+        </div>
+      </div>
+
+      <div class="secondpart">
+        <h2>Our Mission</h2>
+        <p>
+          To make technology accessible to everything, by offering the latest
+          devices with great prices and unmatched service.
+        </p>
+        <div class="sig">
+          <p>Better Tech<br />Brighter Future</p>
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+      </div>
+    </section>
+    <section id="review">
+      <h2>Customers Reviews</h2>
+      <div class="rating">
+        <div class="r">
+          <p>
+            "Excellent products, high quality, and fast delivery. Thanks VOLTIX"
+          </p>
+          <p class="rname">Zainab</p>
+          <p class="rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+        <div class="r">
+          <p>
+            "The laptop I bought is amazing, very good item with great
+            price.All, Feel free to buy!"
+          </p>
+          <p class="rname">Mohammad</p>
+          <p class="rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+        <div class="r">
+          <p>
+            "Excellent customer service, very friendly and extremely helpful!"
+          </p>
+          <p class="rname">Nour</p>
+          <p class="rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="cntcontent">
+        <h2>CONTACT US</h2>
+        <p>
+          We'd love to hear from you! Whether ou have a questions,<br />
+          feedback, or need support, our team is here to help ;)
+        </p>
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope"> </i><span> VOLTIX@gmail.com</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i
+            ><span>white street, Beirut, Lebanon</span>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i><span>+ 961 71 48 35 35</span>
+          </li>
+        </ul>
+      </div>
+      <form class="contform" id="contactForm">
+  <input type="text" id="contname" placeholder="Enter Your Full Name" />
+  <input type="email" id="contemail" placeholder="Enter Your Email" />
+  <textarea id="contmessage" placeholder="Your Message"></textarea>
+  <button type="submit">Send Message</button>
+</form>
+    </section>
+    <div id="loginModal" class="login-modal">
+  <div class="login-box">
+
+    <button id="closeLogin" class="close-login">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <i class="fa-solid fa-bolt login-icon"></i>
+
+    <h2>Welcome to VOLTIX</h2>
+    <p>Login to continue shopping</p>
+
+    <input type="text" id="loginName" placeholder="Enter your name" />
+
+    <input type="email" id="loginEmail" placeholder="Enter your email" />
+
+    <input
+      type="password"
+      id="loginPassword"
+      placeholder="Enter your password"
+    />
+
+    <button id="loginSubmit">Login</button>
+
+    <p id="loginMessage"></p>
+
+  </div>
+</div>
+    <footer> <div class="tnxmes">
+        
+        <h3>Thanks for Visiting</h3>
+        <h2><i class="fa-solid fa-bolt"></i> VOLTIX</h2>
+      </div>
+      <div class="linkup">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a><br />
+        <a href="#products">Products</a><br />
+        <a href="#deals">Deals</a><br />
+        <a href="#about">About</a><br />
+        <a href="#contact">Contact Us</a><br />
+      </div>
+     
+      <div class="follow">
+        <h3>Follow Us :)</h3>
+        <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+        <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+        <p><i class="fa-brands fa-tiktok"></i> Tiktok</p>
+        <p><i class="fa-brands fa-whatsapp"></i> Whatsapp</p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
