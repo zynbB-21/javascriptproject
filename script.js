@@ -490,6 +490,12 @@ setInterval(function () {
   document.getElementById("sec").textContent = seconds;
 
 }, 1000);
+var menuBtn = document.getElementById("menu");
+var navList = document.querySelector(".unorderlisthd");
+
+menuBtn.addEventListener("click", function () {
+  navList.classList.toggle("show-menu");
+});
 displayProducts(products);
 displayCart();
 IncreaseCounter();
