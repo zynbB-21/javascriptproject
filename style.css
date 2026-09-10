@@ -995,3 +995,177 @@ footer h3 {
   margin-top: 15px;
   margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+
+  body {
+    width: 94%;
+  }
+
+  header {
+    width: 94%;
+  }
+
+ 
+  .navigationbar {
+    align-items: center;
+  }
+
+  .unorderlisthd {
+    display: none;
+  }
+
+  .unorderlisthd.show-menu {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 180px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+  }
+
+  .unorderlisthd.show-menu a {
+    color: var(--text-color);
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .btns {
+    gap: 3px;
+  }
+
+  .btns > button {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+
+
+
+  .hm {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .p1,
+  .featuredProduct {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .titleparg {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .imag {
+    width: 100%;
+    height: 300px;
+  }
+
+
+  .services {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+
+  .productselector {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #searchpro,
+  #sortpro {
+    width: 100%;
+  }
+
+  #res {
+    grid-template-columns: 1fr;
+  }
+
+
+  .cart-panel {
+    width: 100%;
+  }
+
+
+  #deals {
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px 25px;
+  }
+
+  .timer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #about {
+    display: block;
+  }
+
+  .firstaboutside {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .abouticonsbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .rating {
+    flex-direction: column;
+  }
+
+  #review {
+    padding: 40px 20px;
+  }
+
+
+
+  #contact {
+    flex-direction: column;
+    padding: 40px 25px;
+  }
+
+  .cntcontent,
+  .contform {
+    width: 100%;
+  }
+
+
+  footer {
+    flex-direction: column;
+  }
+
+  .follow,
+  .linkup,
+  .tnxmes {
+    width: 100%;
+  }
+  .login-box {
+    width: 90%;
+  }
+}
